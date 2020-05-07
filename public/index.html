@@ -8,24 +8,20 @@
 </head>
 <body>
   <div id="app">
-    <header>
-      <nav>
+    <header class="h-16">
+      <nav class="relative flex justify-between content-center mx-2 my-2">
         <figure id="logo--container">
-          <img id="logo" src="" alt="Ned's Pizza - The best Pizza in Amman">
+          <img class="h-12" id="logo" v-bind:src="logo" v-bind:alt="altLogo">
         </figure>
-        <div class="menu--container">
-          <ul id="main-menu">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <ul id="social-menu">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div id="buttonsContainer">
+          <img id="menuOpen" v-bind:src="openMenu" v-bind:alt="altOpen" class="cursor-pointer">
+          <img id="menuClose" v-bind:src="closeMenu" v-bind:alt="altClose" class="hidden delay-300">
+        </div>
+        <div id="menuContainer" class="absolute mt-16 w-full bg-backMenu z-10 delay-300">
+          <ul id="mainMenu" class="hidden py-20">
+            <li v-for="m in menu" class="text-center mx-2 my-4 py-2">
+              <a href="">{{ m }}</a>
+            </li>
           </ul>
         </div>
       </nav>

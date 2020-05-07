@@ -1,18 +1,3 @@
-new Vue({
-  el: '#app',
-  data() {
-    return {
-      logo: '/img/nedslogo.png',
-      openMenu: '/img/icon-open.svg',
-      altOpen: 'Open Menu',
-      altClose: 'Close Menu',
-      closeMenu: '/img/icon-close.svg',
-      altLogo: 'Ned´s Pizza | The best pizza in Amman',
-      menu:['Home', 'Menu', 'Our pizza','Working hours','Contact']
-    }
-  }
-});
-
 // menuResponsive
 let menuOpen = document.querySelector('#menuOpen')
 let menuClose = document.querySelector('#menuClose')

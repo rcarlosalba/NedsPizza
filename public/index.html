@@ -8,33 +8,44 @@
 </head>
 <body>
   <div id="app">
-    <header class="h-16">
-      <nav class="relative flex justify-between content-center mx-2 my-2">
+    <header class="h-16 fixed w-screen z-20 bg-white" id="header">
+      <nav class="relative flex justify-between items-center mx-2 my-2">
         <figure id="logo--container">
-          <img class="h-12" id="logo" v-bind:src="logo" v-bind:alt="altLogo">
+          <img class="h-12" id="logo" src="./img/nedslogo.png" alt="Ned's Pizza | The best pizza in Amman">
         </figure>
         <div id="buttonsContainer">
-          <img id="menuOpen" v-bind:src="openMenu" v-bind:alt="altOpen" class="cursor-pointer">
-          <img id="menuClose" v-bind:src="closeMenu" v-bind:alt="altClose" class="hidden delay-300">
-        </div>
-        <div id="menuContainer" class="absolute mt-16 w-full bg-backMenu z-10 delay-300">
-          <ul id="mainMenu" class="hidden py-20">
-            <li v-for="m in menu" class="text-center mx-2 my-4 py-2">
-              <a href="">{{ m }}</a>
-            </li>
-          </ul>
+          <img id="menuOpen" src="./img/icon-open.svg" alt="Open Menu" class="cursor-pointer">
+          <img id="menuClose" src="./img/icon-close.svg" alt="Close Menu" class="hidden delay-300">
         </div>
       </nav>
+      <div id="menuContainer" class="z-10 delay-300">
+        <ul id="mainMenu" class="hidden py-12 bg-backMenu absolute mt-16 inset-0 h-screen">
+          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
+            <a href="#header">Home</a>
+          </li>
+          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
+            <a href="#optionContainer">Menu</a>
+          </li>
+          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
+            <a href="#ourpizza">Our Pizza</a>
+          </li>
+          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
+            <a href="#workinghours">Working hours</a>
+          </li>
+          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <div id="hero">
-      <figure id="hero--container">
-        <img src="" alt="Ned's Pizza | Sicilian Pepperoni">
-      </figure>
+    <div class="pt-16"></div>
+    <div id="hero" class="bg-fixed h-64 w-screen">
+      
     </div>
-    <div id="call--us">
+    <div id="callUs">
   
     </div>
-    <div id="options--container">
+    <div id="optionsContainer">
       <div id="bread">
   
       </div>
@@ -45,7 +56,7 @@
   
       </div>
     </div>
-    <div id="our--pizza">
+    <div id="ourPizza">
       <div id="card--our--pizza">
         <figure id="card--our--img">
           <img src="" alt="">
@@ -55,10 +66,10 @@
         </section>
       </div>
     </div>
-    <div id="working--hours">
+    <div id="workingHours">
   
     </div>
-    <div id="contact--us">
+    <div id="contactUs">
       <div id="map--container">
   
       </div>
@@ -74,7 +85,7 @@
   </div>
   <!-- scripts and External CSS -->
   <!-- vueJS -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="./js/vue.js"></script>
   <!-- codeJS -->
   <script src="./js/code.js"></script>
   <!-- font awesome -->

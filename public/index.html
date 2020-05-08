@@ -6,86 +6,64 @@
   <title>Ned's Pizza | The best pizza in Amman</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-  <div id="app">
-    <header class="h-16 fixed w-screen z-20 bg-white" id="header">
-      <nav class="relative flex justify-between items-center mx-2 my-2">
-        <figure id="logo--container">
-          <img class="h-12" id="logo" src="./img/nedslogo.png" alt="Ned's Pizza | The best pizza in Amman">
-        </figure>
-        <div id="buttonsContainer">
-          <img id="menuOpen" src="./img/icon-open.svg" alt="Open Menu" class="cursor-pointer">
-          <img id="menuClose" src="./img/icon-close.svg" alt="Close Menu" class="hidden delay-300">
-        </div>
-      </nav>
-      <div id="menuContainer" class="z-10 delay-300">
-        <ul id="mainMenu" class="hidden py-12 bg-backMenu absolute mt-16 inset-0 h-screen">
-          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
-            <a href="#header">Home</a>
-          </li>
-          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
-            <a href="#optionContainer">Menu</a>
-          </li>
-          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
-            <a href="#ourpizza">Our Pizza</a>
-          </li>
-          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
-            <a href="#workinghours">Working hours</a>
-          </li>
-          <li class="text-center mx-2 my-2 py-2 border-b border-dashed font-semibold text-white">
-            <a href="#contact">Contact</a>
-          </li>
+<body class="bg-gray-200">
+  <!-- header  -->
+  <header class="fixed h-24 w-screen z-10 top-0 left-0 right-0 bg-white">
+    <div id="headerContainer" class="mt-2 flex justify-between items-center md:w-screen md:flex md:justify-between">
+      <figure class="ml-2 md:w-2/12">
+        <a href="#">
+          <img class="h-20" src="./img/nedslogo.png" alt="Ned's Pizza | The best pizza in Amman">
+        </a>
+      </figure>
+      <div id="responsiveButtons" class="md:hidden">
+        <img id="menuOpen" src="./img/icon-open.svg" alt="Open Menu" class="mr-2 cursor-pointer">
+        <img id="menuClose" src="./img/icon-close.svg" alt="Close Menu" class="mr-2 hidden">
+      </div>
+      <nav id="menuContainer" class="hidden absolute inset-0 w-screen mt-20 z-20 md:inline-block md:w-9/12 md:relative md:mt-0">
+        <ul class="mt-4 text-firstRed bg-white h-screen w-screen text-center inline-block md:h-20 md:w-full md:mt-0">
+          <li class="text-lg text-center my-4 mx-2 md:mx-1 md:inline-block"><a class="block m-2 p-4  md:p-2 md:m-2 md:inline-block" href="#home">Home</a></li>
+          <li class="text-lg text-center my-4 mx-2 md:mx-1 md:inline-block"><a class="block m-2 p-4  md:p-2 md:m-2 md:inline-block" href="#menu">Menu</a></li>
+          <li class="text-lg text-center my-4 mx-2 md:mx-1 md:inline-block"><a class="block m-2 p-4  md:p-2 md:m-2 md:inline-block" href="#ourPizza">Our Pizza</a></li>
+          <li class="text-lg text-center my-4 mx-2 md:mx-1 md:inline-block"><a class="block m-2 p-4  md:p-2 md:m-2 md:inline-block" href="#workinghours">Working hours</a></li>
+          <li class="text-lg text-center my-4 mx-2 md:mx-1 md:inline-block"><a class="block m-2 p-4  md:p-2 md:m-2 md:inline-block" href="#contact">Contact</a></li>
+          <li><a href="#"></a></li>
         </ul>
-      </div>
-    </header>
-    <div class="pt-16"></div>
-    <div id="hero" class="bg-fixed h-64 w-screen">
-      
+      </nav>
     </div>
-    <div id="callUs">
-  
-    </div>
-    <div id="optionsContainer">
-      <div id="bread">
-  
-      </div>
-      <div id="sizes">
-  
-      </div>
-      <div id="card--container">
-  
-      </div>
-    </div>
-    <div id="ourPizza">
-      <div id="card--our--pizza">
-        <figure id="card--our--img">
-          <img src="" alt="">
-        </figure>
-        <section>
-  
-        </section>
-      </div>
-    </div>
-    <div id="workingHours">
-  
-    </div>
-    <div id="contactUs">
-      <div id="map--container">
-  
-      </div>
-    </div>
-    <footer>
-      <ul id="social-menu">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </footer>
+  </header>
+  <!-- header -->
+  <div class="spacer h-24"></div>
+  <!-- hero -->
+  <div id="hero" class="h-64 w-full" style="background-image: url(./img/pizza.png)">
   </div>
+  <!-- hero -->
+  <!-- callUs -->
+  <div id="callUs">
+    <img src="./img/phone.jpg" alt="Call Us">
+  </div>
+  <!-- callUs -->
+  <!-- cardscontainer -->
+  <div id="cards-container">
+    <div class="card bg-white rounded-lg overflow-hidden mx-2">
+      <div class="relative pb-2/3 h-64">
+        <img class="absolute h-full w-full object-cover" src="./img/marga.jpg" alt="">
+      </div>
+      <div class="p-6">
+        <div class="">
+          <h3 class="mt-1 font-semibold text-lg leading-tight truncate">Neds Margarita</h3>
+          <div class="mt-2">
+            <ul class="text-gray-800">
+              <li>Tomato sauce</li>
+              <li>Ned's spaceial Cheese blend</li>
+              <li>Garlic Oil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cardscontainer -->
   <!-- scripts and External CSS -->
-  <!-- vueJS -->
-  <script src="./js/vue.js"></script>
   <!-- codeJS -->
   <script src="./js/code.js"></script>
   <!-- font awesome -->

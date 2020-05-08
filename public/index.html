@@ -6,9 +6,9 @@
   <title>Ned's Pizza | The best pizza in Amman</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="bg-gray-200">
+<body class="bg-greyCall">
   <!-- header  -->
-  <header class="fixed h-24 w-screen z-10 top-0 left-0 right-0 bg-white">
+  <header class="fixed h-24 w-screen z-20 top-0 left-0 right-0 bg-white">
     <div id="headerContainer" class="mt-2 flex justify-between items-center md:w-screen md:flex md:justify-between">
       <figure class="ml-2 md:w-2/12">
         <a href="#">
@@ -20,7 +20,7 @@
         <img id="menuClose" src="./img/icon-close.svg" alt="Close Menu" class="mr-2 hidden">
       </div>
       <nav id="menuContainer" class="hidden absolute inset-0 w-screen mt-20 z-20 md:inline-block md:w-9/12 md:relative md:mt-0">
-        <ul class="mt-4 text-firstRed bg-white h-screen w-screen text-center inline-block md:h-20 md:w-full md:mt-0">
+        <ul class="mt-4 text-firstRed bg-backMenu h-screen w-screen text-center inline-block md:h-20 md:w-full md:mt-0">
           <li class="text-lg text-center my-4 mx-2 md:mx-1 md:inline-block"><a class="block m-2 p-4  md:p-2 md:m-2 md:inline-block" href="#home">Home</a></li>
           <li class="text-lg text-center my-4 mx-2 md:mx-1 md:inline-block"><a class="block m-2 p-4  md:p-2 md:m-2 md:inline-block" href="#menu">Menu</a></li>
           <li class="text-lg text-center my-4 mx-2 md:mx-1 md:inline-block"><a class="block m-2 p-4  md:p-2 md:m-2 md:inline-block" href="#ourPizza">Our Pizza</a></li>
@@ -38,13 +38,47 @@
   </div>
   <!-- hero -->
   <!-- callUs -->
-  <div id="callUs">
-    <img src="./img/phone.jpg" alt="Call Us">
+  <div id="callUs" class="py-4 w-full text-center text-firstRed">
+      <h2 class="text-2xl">
+        <a href="tel:0795-526-555" class="text-4xl font-semibold">
+          <i class="fas fa-phone-volume"></i> 795-526-555
+        </a>
+      </h2>
   </div>
   <!-- callUs -->
+  <div id="menuContainer">
+    <div id="menu" class="text-gray-800 mx-4">
+      <h2 class="text-3xl text-center font-semibold">Menu</h2>
+      <h3 class="text-xl font-medium text-gray-800 text-center my-4">Ned's Pizza offer two styles of Crust</h3>
+      <p class="my-2"><span class="text-firstRed font-semibold">Classic Crust:</span> New York style thin pizza.</p>
+      <p class="my-2"><span class="text-firstRed font-semibold">Sicilian Crust:</span> Squared thick crus pan pizza, cooked in olive oil, with a puffy inside and crispy bottom.</p>
+    </div>
+    <div id="sizes" class="text-center h-40 w-full mx-auto flex justify-center items-end mb-4">
+      <div id="clasic12Container" class="block mx-auto">
+        <div id="clasic12" class="w-16 h-16 bg-firstRed rounded-full mx-auto">
+        </div>
+        <h3 class="font-semibold mt-2">Classic 12"</h3>
+        <p>(1 - 2 Persons)</p>
+      </div>
+      <div id="clasic15Container" class="block mx-auto">
+        <div id="clasic12" class="w-20 h-20 bg-firstRed rounded-full mx-auto">
+        </div>
+        <h3 class="font-semibold mt-2">Classic 15"</h3>
+        <p>(2 - 3 Persons)</p>
+      </div>
+      <div id="sicilianPP" class="block mx-auto">
+        <div id="sicilianPP" class="w-24 h-24 bg-firstRed rounded-sm mx-auto">
+        </div>
+        <h3 class="font-semibold mt-2">Sicilian Pan Pizza</h3>
+        <p>(2 - 3 Persons)</p>
+      </div>
+    </div>
+
+  </div>
   <!-- cardscontainer -->
-  <div id="cards-container">
-    <div class="card bg-white rounded-lg overflow-hidden mx-2">
+  <div id="cards-container" class="md:flex justify-center">
+    <!-- card -->
+    <div class="card bg-white rounded-lg overflow-hidden mx-4 my-4 w-12/12 sm:w-full md:w-5/12 lg:w-3/12">
       <div class="relative pb-2/3 h-64">
         <img class="absolute h-full w-full object-cover" src="./img/marga.jpg" alt="">
       </div>
@@ -61,8 +95,77 @@
         </div>
       </div>
     </div>
+    <!-- card -->
+    <!-- card -->
+    <div class="card bg-white rounded-lg overflow-hidden mx-4 my-4 w-12/12 sm:w-full md:w-5/12 lg:w-3/12">
+      <div class="relative pb-2/3 h-64">
+        <img class="absolute h-full w-full object-cover" src="./img/marga.jpg" alt="">
+      </div>
+      <div class="p-6">
+        <div class="">
+          <h3 class="mt-1 font-semibold text-lg leading-tight truncate">Neds Margarita</h3>
+          <div class="mt-2">
+            <ul class="text-gray-800">
+              <li>Tomato sauce</li>
+              <li>Ned's spaceial Cheese blend</li>
+              <li>Garlic Oil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card -->
+    <!-- card -->
+    <div class="card bg-white rounded-lg overflow-hidden mx-4 my-4 w-12/12 sm:w-full md:w-5/12 lg:w-3/12">
+      <div class="relative pb-2/3 h-64">
+        <img class="absolute h-full w-full object-cover" src="./img/marga.jpg" alt="">
+      </div>
+      <div class="p-6">
+        <div class="">
+          <h3 class="mt-1 font-semibold text-lg leading-tight truncate">Neds Margarita</h3>
+          <div class="mt-2">
+            <ul class="text-gray-800">
+              <li>Tomato sauce</li>
+              <li>Ned's spaceial Cheese blend</li>
+              <li>Garlic Oil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card -->
+    <!-- card -->
+    <div class="card bg-white rounded-lg overflow-hidden mx-4 my-4 w-12/12 sm:w-full md:w-5/12 lg:w-3/12">
+      <div class="relative pb-2/3 h-64">
+        <img class="absolute h-full w-full object-cover" src="./img/marga.jpg" alt="">
+      </div>
+      <div class="p-6">
+        <div class="">
+          <h3 class="mt-1 font-semibold text-lg leading-tight truncate">Neds Margarita</h3>
+          <div class="mt-2">
+            <ul class="text-gray-800">
+              <li>Tomato sauce</li>
+              <li>Ned's spaceial Cheese blend</li>
+              <li>Garlic Oil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card -->
   </div>
   <!-- cardscontainer -->
+  <div id="ourPizza" class="mx-4">
+    <h2 class="text-2xl text-gray-800 font-semibold text-center mt-4">Our Pizza</h2>
+    <div id="cardOurPizza" class="rounded-lg overflow-hidden w-full bg-white my-4">
+      <img src="./img/pizza.png" alt="Ned's Pizza | The best pizza in Amman">
+      <section>
+        <h2 class="text-2xl text-gray-800 font-semibold text-center my-4">We love pizza</h2>
+        <p class="mx-4 leading-loose text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus, ad corrupti alias sed totam ipsum sit accusantium neque. Impedit explicabo amet quos! Vero ut eligendi cumque ad placeat quis?
+        Reprehenderit suscipit consequatur, voluptatibus possimus repellat assumenda est odit distinctio recusandae dignissimos eius ipsum, et dolor rem quasi repudiandae temporibus maxime exercitationem excepturi reiciendis necessitatibus? Sit dolorem amet eveniet alias.</p>
+      </section>
+    </div>
+  </div>
   <!-- scripts and External CSS -->
   <!-- codeJS -->
   <script src="./js/code.js"></script>
